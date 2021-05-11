@@ -17,9 +17,9 @@
         <form action="/byo/order" method="POST">
             <label for="size">Size</label>
             <select id="size">
-                <option data-price="7">Small</option>
-                <option data-price="10">Medium</option>
-                <option data-price="12">Large</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
             </select>
 
             <label for="toppingCount">How Many Toppings?</label>
@@ -32,7 +32,7 @@
                 {{/each}}
             </ul>
             <label for="gfCrust">Gluten-Free Crust?</label><br>
-            <input type="checkbox" name="gfCrust" id="gfCrust" data-price="2">
+            <input type="checkbox" name="gfCrust" id="gfCrust" value="2">
 
             <label for="instructions">Special Instructions (optional)</label><br>
             <input type="text" name="instructions" id="instructions">

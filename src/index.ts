@@ -2,7 +2,6 @@ import byo from './routes/byo';
 import express from 'express';
 import homeRoutes from './routes/home';
 import path from 'path';
-import pizzaRoutes from './routes/pizza';
 import review from './routes/review';
 import specialtyPizza from './routes/specialty-pizza';
 
