@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Build Your Own Pizza</h1>
+        <form action="/byo/order" method="POST">
+            <label for="size">Size</label>
+            <select id="size">
+                <option data-price="7">Small</option>
+                <option data-price="10">Medium</option>
+                <option data-price="12">Large</option>
+            </select>
+
+            <label for="toppingCount">How Many Toppings?</label>
+            <input type="number" id="toppingCount" name="toppingCount">
+
+            <h2>Options</h2>
+            <ul>
+                {{#each toppings }}
+                <li>{{this}}</li>
+                {{/each}}
+            </ul>
+            <label for="gfCrust">Gluten-Free Crust?</label><br>
+            <input type="checkbox" name="gfCrust" id="gfCrust" data-price="2">
+
+            <label for="instructions">Special Instructions (optional)</label><br>
+            <input type="text" name="instructions" id="instructions">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <a href="/">Back to Homepage</a>
+
+</body>
+
+</html>

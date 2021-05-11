@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Leave a Review</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Leave a Review</h1>
+
+        <form action="/review/review-review" method="POST">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="comment">Comment</label>
+            <input type="text" id="comment" name="comment">
+
+            <label for="1">1</label><br>
+            <input type="radio" name="rating" id="1" value="1">
+            <label for="2">2</label><br>
+            <input type="radio" name="rating" id="2" value="2">
+            <label for="3">3</label><br>
+            <input type="radio" name="rating" id="3" value="3">
+            <label for="4">4</label><br>
+            <input type="radio" name="rating" id="4" value="4">
+            <label for="5">5</label><br>
+            <input type="radio" name="rating" id="5" value="5">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <a href="/" id="home">Back to Homepage</a>
+</body>
+
+</html>
